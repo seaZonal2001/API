@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+
+section{
+    margin-top: 5px;
+    display: flex;
+}
+
+.cat,.dog,.fox{
+    height: 90vh;
+    width: 33vw;
+    margin-right: 5px;
+    background-color: rgb(206 ,20 ,82);
+}
+
+.cat img,.dog img,.fox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cat {
+    margin-left: 5px;
+}
+
+.get-animals{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px 20px;
+    outline: none;
+    background: none;
+    border: 2px solid rgb(206 ,20 ,82);
+    margin-top: 15px;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    color: yellow;
+}
+button:hover{
+    background: rgb(206 ,20 ,82);
+    color: white;
+}
